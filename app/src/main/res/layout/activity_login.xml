@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:layout_marginVertical="16dp"
+    android:layout_marginHorizontal="32dp"
+    >
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20dp"
+        android:src="@drawable/logo"
+        android:id="@+id/signup_icon"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/hello"
+        android:layout_below="@+id/signup_icon">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello."
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Well come Back"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/hello"
+        android:layout_marginTop="20dp"
+        android:id="@+id/login_form_layout"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textWebEmailAddress"
+            android:background="@drawable/corner"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/emailid_LOGIN"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:background="@drawable/corner"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/pass1id_lOGIN"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Login"
+            android:layout_marginTop="12dp"
+            android:textSize="16dp"
+            android:id="@+id/lOGIN_btn"
+
+            />
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/prog1_LOGIN"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/login_form_layout"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an Account ?"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/create_Account_textview_btn"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
